@@ -1,0 +1,155 @@
+
+.dashboard{
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    background-color: var(--gray);
+}
+
+.sub-dashboard
+{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto auto;
+    border-radius: 20px;
+    padding: 0 20px;
+   
+}
+.comp-item
+{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    padding: 20px 5px;
+    width: auto;
+    text-align: center;
+    max-height: 200px;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: inset 2px 3px 4px lightgray;
+}
+.comp-item div{
+    display: flex;
+    flex-direction: column;
+}
+.comp-item div span{
+    font-size: 1.4em;
+    color:var(--blue);
+    font-weight: 700;
+}
+.comp-item h4{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+.comp-item button{
+    width: 100px;
+    border-radius: 20px;
+   outline: none;
+   background-color: rgb(160, 36, 36);
+   color: white;
+   margin-top: 20px;
+   padding: 5px;
+   border: none;
+   transition: all 0.5s ease;
+
+}
+.comp-item button:hover{
+  
+    background-color: rgba(160, 36, 36,0.7);
+    color: black;
+    border: 2px solid royalblue;
+}
+.units__container
+{
+    width: 90%;
+    display: flex;
+    background-color: white;
+    margin:10px 20px;
+    border-radius: 10px;
+    padding: 20px;
+
+    flex-direction: column;
+}
+.units__container h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+}
+.units__container form{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    width: 100%;
+    column-gap: 10px;
+    justify-content: space-around;
+}
+ 
+.units__container form div h4{
+    margin: 10px 0px;
+    font-size: 1rem;
+    margin-left: 30px;
+    font-family: sans-serif;
+    font-weight: 400;
+
+}
+.units__container form div select{
+    max-width: 300px;
+    width: 200px;
+    margin: 10px;
+    padding: 3px 5px;
+    outline: none;
+    font-family: sans-serif;
+    border-radius: 15px;
+    background-color: white;
+  
+}
+.units__container form div select option{
+    background-color: white;
+    color: black;
+}
+
+#applicants
+{
+    background-color: white;
+    margin-top: 30px;
+    max-width: 90%;
+    width: 80%;      
+    max-height: 500px; 
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+#applicants tr td{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#applicants th td
+{
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 5px;
+
+}
+#applicants tbody tr:nth-child(odd)
+{
+    background-color: rgb(8, 156, 156);
+}
+#applicants tbody tr:nth-child(even)
+{
+    background-color: rosybrown;
+}
+#applicants tbody tr td:last-child
+{
+    text-align: end;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#applicants tbody tr td:last-child:hover{
+    color: var(--blue);
+}

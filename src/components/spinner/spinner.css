@@ -1,0 +1,32 @@
+.spinner
+{
+    width:25px;
+    height: 25px;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 3px solid white;
+    background:linear-gradient(red,green);
+    animation: animate infinite 0.2s;
+    animation-delay: 0ms;
+}
+.bbox
+{
+    width: 90%;
+    border-radius: 50%;
+    height: 90%;
+}
+
+@keyframes animate {
+    from{
+      transform: rotate(-360deg);
+    }
+    to
+    {
+      transform: rotate(0);
+    }
+    
+}

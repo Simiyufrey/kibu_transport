@@ -1,0 +1,84 @@
+*
+{
+    padding: 0%;
+    margin: 0;
+}
+.nav__container
+{
+    position: fixed;
+    background-color: var(--bg-color);
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    align-items: center;
+    height: 70px;
+    margin-right: 0px;
+    justify-content: space-between;
+    box-shadow: 2px 2px 3px rgba(255, 255, 200, 0.4);
+}
+.menu-icon
+{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.menu-icon:hover{
+    color: rgb(53, 49, 49);
+    transform: scale(1.2);
+}
+.nav__container li{
+    list-style: none;
+    color: white;
+    cursor: pointer;
+
+    margin-right: 10%;
+}
+.nav__container li span{
+    margin-left: 10px;
+    
+}
+.nav__container li:hover{
+   
+   color: rgb(211, 205, 205);
+}
+.nav__container li:hover .dropdown
+{
+    display: block;
+}
+.nav__container li .dropdown
+{
+    position: absolute;
+    z-index: 2;
+    display: none;
+    margin-right: 100px;
+    margin-left: -50px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(245, 232, 209);
+    background-color: white;
+}
+ 
+
+
+.nav__container .item
+{
+    padding: 0px;
+    text-decoration: none;
+    margin: 0px;
+    background-color: transparent;
+}
+.item li
+{
+    transition: all ease 0.5s;
+    margin:20px 20px;
+    color: black;
+}
+.item li:hover{
+  border-bottom: 1px solid black;
+}
